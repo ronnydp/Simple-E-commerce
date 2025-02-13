@@ -1,9 +1,11 @@
-const express = require('express');
+import express from "express";
+import morgan from "morgan"
+
 const app = express();
-const morgan = require('morgan');
+
 
 app.use(morgan('dev'));
 
-app.listen(3000, () => {
-  console.log('Server on port 3000');
+app.listen(5000, () => {
+  console.log('Server on port 5000');
 });
